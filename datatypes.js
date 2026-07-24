@@ -19,12 +19,8 @@ console.log(typeof(e));
 let f = undefined 
 console.log(typeof(f)); 
 
-let c = a - b 
-console.log(c); 
+let i = a - b 
+console.log(i); 
 
 var required = true
 console.log(!required); 
-
-
-
-

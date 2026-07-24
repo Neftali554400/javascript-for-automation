@@ -29,16 +29,24 @@ do {
 // <-- DO-WHILE LOOP ENDS HERE
 // Note: Since 'i' is already 10, the body runs ONCE (prints 10, 'i' becomes 11).
 // Then it checks (11 < 10), which is false, so it stops immediately! 
+
+
 console.log("======="); 
 
 
 // 5. FOR LOOP
-let n = 0;  // Declare n
+let n = 0; // Counter to track how many matching numbers we've found
+
+// Loop through numbers 'k' from 1 to 100
 for (let k = 1; k <= 100; k++) { 
-    if (k%2 == 0 || k%5 == 0) {
-        n++;
-        console.log(k);
-        if(n == 3) {
+    
+    // Check if 'k' is divisible by 2 OR divisible by 5 (even numbers or multiples of 5)
+    if (k % 2 == 0 || k % 5 == 0) {
+        n++;            // Increment match counter
+        console.log(k); 
+        
+        // Stop the loop completely once we have found 3 matching numbers
+        if (n == 3) {
             break;
         }
     }
